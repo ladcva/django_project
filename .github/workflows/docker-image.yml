@@ -14,5 +14,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      
+    - name: GitHub Releases for Automated Package Publishing
+      uses: manovotny/github-releases-for-automated-package-publishing-action@v1.0.0
