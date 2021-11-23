@@ -18,5 +18,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
-    - name: GitHub Releases for Automated Package Publishing
-      uses: manovotny/github-releases-for-automated-package-publishing-action@v1.0.0
+    - name: GitHub Action for pylint
+      uses: cclauss/GitHub-Action-for-pylint@0.7.0
